@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:04:10 by ael-fagr          #+#    #+#             */
-/*   Updated: 2024/11/27 00:37:40 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2024/12/11 10:37:14 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Fixed::Fixed(const int value){
 }
 
 Fixed::Fixed(const float value){
-    this->fix_value = static_cast<int>(std::round(value * (1 << this->FRACTIONAL_BITS)));
+    this->fix_value = static_cast<int>(std::roundf(value * (1 << this->FRACTIONAL_BITS)));
     std::cout << "Float constructor called" << std::endl;
 }
 
