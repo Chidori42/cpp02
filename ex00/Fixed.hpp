@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 21:59:25 by ael-fagr          #+#    #+#             */
-/*   Updated: 2024/11/25 19:20:25 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/21 16:17:24 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Fixed{
     private:
         int fix_value;
-        static const int n_fraction = 8;
+        static const int FRACTIONAL_BITS = 8;
     public:
         Fixed();
         ~Fixed();

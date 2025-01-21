@@ -1,8 +1,10 @@
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS =	main.cpp\
-		Fixed.cpp
+		Fixed.cpp \
+		bsp.cpp \
+		Point.cpp
 
-NAME = test
+NAME = BSP
 
 OBJECTS = $(SRCS:.cpp=.o)
 
@@ -10,7 +12,7 @@ RM = rm -f
 
 all: $(NAME)
 
-%.o: %.cpp Fixed.hpp
+%.o: %.cpp Fixed.hpp Point.hpp
 	c++ $(CFLAGS) -c -o $@ $<
 
 $(NAME): $(OBJECTS)

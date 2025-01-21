@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:04:10 by ael-fagr          #+#    #+#             */
-/*   Updated: 2024/11/24 18:10:04 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/21 16:14:42 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,10 @@ Fixed::Fixed( const Fixed &other) :fix_value(other.fix_value)
 }
 Fixed &Fixed::operator=(const Fixed &other)
 {
+    if (this != &other)
+    {
+        this->fix_value = other.fix_value;
+    }
     std::cout << "copy assignment operator called" << std::endl;
     getRawBits();
     return *this;
