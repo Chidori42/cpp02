@@ -6,7 +6,7 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:04:10 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/01/25 18:08:55 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/26 20:15:22 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,5 @@ Fixed &Fixed::operator=(const Fixed &other)
 }
 std::ostream &operator<<(std::ostream &out, const Fixed &obj) {
     out << obj.toFloat();
-    (void)obj;
     return out;
 }

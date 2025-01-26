@@ -6,20 +6,22 @@
 /*   By: ael-fagr <ael-fagr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 10:42:35 by ael-fagr          #+#    #+#             */
-/*   Updated: 2025/01/26 19:45:52 by ael-fagr         ###   ########.fr       */
+/*   Updated: 2025/01/26 20:18:59 by ael-fagr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Point.hpp"
 
 Point::Point(){
-    // std::cout << "Default Constructor Called" << std::endl;
+    std::cout << "Point Default Constructor Called" << std::endl;
 }
 Point::~Point(){
-    // std::cout << "Desstructor Called" << std::endl;
+    std::cout << "Point Destructor Called" << std::endl;
 }
+
 Point::Point(const float n1, const float n2): x(n1), y(n2){
 }
+
 Point::Point(const Point &other): x(other.x), y(other.y){
 
 }
